@@ -3,7 +3,7 @@ kind: HorizontalPodAutoscaler
 metadata:
   name: node-example
   annotations:
-    nalysis.scaleops.io/original-metrics: >-
+    analysis.scaleops.io/original-metrics: >-
       [{"type":"Resource","resource":{"name":"cpu","target":{"type":"Utilization","averageUtilization":70}}}]
 spec:
   minReplicas: 1
